@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "animal_types",
+  "info": {
+    "singularName": "animal-type",
+    "pluralName": "animal-types",
+    "displayName": "Animal Type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "animals": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::animal.animal",
+      "mappedBy": "animal_type"
+    }
+  }
+}

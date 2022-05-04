@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  garment controller
+ *  animal controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::garment.garment');
+module.exports = createCoreController('api::animal.animal');

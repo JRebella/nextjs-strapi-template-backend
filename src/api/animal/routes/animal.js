@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * garment router.
+ * animal router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::garment.garment');
+module.exports = createCoreRouter('api::animal.animal');

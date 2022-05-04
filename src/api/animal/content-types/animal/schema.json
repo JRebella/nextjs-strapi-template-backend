@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "animals",
+  "info": {
+    "singularName": "animal",
+    "pluralName": "animals",
+    "displayName": "Animal",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20
+    },
+    "animal_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::animal-type.animal-type",
+      "inversedBy": "animals"
+    },
+    "leg_count": {
+      "type": "integer",
+      "required": true,
+      "default": 4,
+      "min": 0
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
