@@ -1,3 +1,5 @@
+WIP Readme
+
 ## Run locally
 
 `yarn develop`
@@ -15,12 +17,3 @@ To deploy the latest from main:
 or
 
 `git push heroku [branch-to-deploy]:main`
-
-## Extras
-
-### Generate typescript types
-
-Using [strapi-generate-types](https://www.npmjs.com/package/strapi-generate-types) you can generate typescript types based on your strapi models to use in your frontend app
-
-To generate types run:
-`yarn strapi-generate-types generate`
